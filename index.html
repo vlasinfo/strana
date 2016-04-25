@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stranaua</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/stranastyle.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="container">
+            <div class="row hidden-xs" style="text-align: center;">
+                <img src="img/banner728.jpg" alt="">
+            </div>
+
+            <div class="row info-header hidden-xs">
+                <div class="col-md-8">
+                    <span class="top-date">6 августа 2015</span>
+                    <span class="currency"><a href="#">USD<span class="glyphicon glyphicon-triangle-top"></span><span class="name-course">23.16</span></a></span>
+                    <span class="currency"><a href="#">EUR<span class="glyphicon glyphicon-triangle-top"></span><span class="name-course">25.38</span></a></span>
+                    <span class="currency"><a href="#">нефть<span class="glyphicon glyphicon-triangle-bottom"></span><span class="name-course">35.13</span></a></span>
+                    <span class="currency"><a href="#">сталь<span class="glyphicon glyphicon-triangle-bottom"></span><span class="name-course">220.00</span></a></span>
+                    <span class="currency"><a href="#">пшеница<span class="glyphicon glyphicon-triangle-top"></span><span class="name-course">461.00</span></a></span>
+                </div>
+
+                <div class="col-md-4 info-right">
+                    <div class="social-box">
+                        <a href="#">
+                            <div class="social-item">
+                                <span class="fa fa-facebook"></span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="social-item">
+                                <span class="fa fa-vk"></span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="social-item">
+                                <span class="fa fa-twitter"></span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="social-item more">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="top-search">
+                        <form role="search" method="get" action="#">
+                            <div class="search-form">
+                                <label>
+                                    <input type="text" class="search-field" placeholder="Поиск..." value="" name="s">
+                                </label>
+                                <button type="submit" class="btn btn-default search-submit"><i class="fa fa-search"> </i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="dotted-line"></div>
+                </div>
+            </div>
+
+            <div class="row site-header hidden-xs">
+                <div class="col-md-4 col-xs-12 logo">
+                    <a href="#"><img src="img/logo.jpg" alt=""></a>
+                </div>
+
+                <div class="col-md-3 col-md-offset-1 col-sm-6 col-xs-12 promo-news">
+                    <a href="#">Порошенко запретил мультфильм про дядю Федора и Печкина</a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 promo-opinion">
+                    <div class="img">
+                        <a href="#"><img src="img/opinion-1.png" alt="" width="100"></a>
+                    </div>
+                    <div class="text">
+                        <div class="name"><a href="#">Ангела Меркель</a></div>
+                        <div class="title"><a href="#">Наш главный принцип - баба тоже человек</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <nav class="navbar navbar-default navbar-fixed main-menu" role="navigation">
+                        <div class="navbar-header">
+                            <div class="left-block-xs">
+                                <a href="#" class=" visible-xs"><img src="img/logo.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <button type="button" class="btn navbar-toggle more-xs" data-toggle="collapse" data-target="#main-menu">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn navbar-toggle search-xs" data-toggle="collapse" data-target="#search-me"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+
+                        <div id="search-me" class="collapse">
+                            <div class="top-search">
+                                <form role="search" method="get" action="#">
+                                    <div class="search-form">
+                                        <label>
+                                            <input type="text" class="search-field" placeholder="Поиск..." value="" name="s">
+                                        </label>
+                                        <button type="submit" class="btn btn-default search-submit"><i class="fa fa-search"> </i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="main-menu">
+
+                            <ul class="nav navbar-nav main-menu">
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">10 событий дня</a></li>
+                                <li><a href="#">Блоги</a></li>
+                                <li><a href="#">Инфографика</a></li>
+                                <li><a href="#">Фото / Видео</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="row main-header-news hidden-xs">
+                <div class="col-md-6">
+                    <div class="link-text"><a href="#">В Киеве не исключают Минска-3</a></div>
+                    <div class="link-text"><a href="#">На юге Украины из-за непогоды закрли трассы</a></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="link-text"><a href="#">Польша и Словакия отказались принимать беженцев-мусульман</a></div>
+                    <div class="link-text"><a href="#">Меркель верит в результативность переговоров</a></div>
+                </div>
+            </div>
+
+            <div class="row main-header-news visible-xs">
+                <marquee>
+                    <span class="link-text"><a href="#">В Киеве не исключают Минска-3</a></span>
+                    <span class="link-text"><a href="#">На юге Украины из-за непогоды закрли трассы</a></span>
+                    <span class="link-text"><a href="#">Польша и Словакия отказались принимать беженцев-мусульман</a></span>
+                    <span class="link-text"><a href="#">Меркель верит в результативность переговоров</a></span>
+                </marquee>
+            </div>
+
+            <div class="row blogs-under-header visible-xs">
+
+                <div id="carousel-headernews" class="col-xs-12 carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="promo-news">
+                                <a href="#">Порошенко запретил мультфильм про дядю Федора и Печкина</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 promo-opinion">
+                                <div class="text">
+                                    <div class="name"><a href="#">Ангела Меркель</a></div>
+                                    <div class="title"><a href="#">Наш главный принцип - баба тоже человек</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#carousel-headernews" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-headernews" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 article-and-news">
+
+                    <div class="row">
+
+                        <div class="col-md-8 col-md-push-4 articles">
+                            <div class="image-single">
+                                <a href="#"><img src="img/main-news.jpg" alt=""></a>
+                                <div class="main-title">
+                                    <div class="title-main-news"><a href="#">Бойня под Радой: реконструкция событий. Кто отдал приказ бросать гранату</a></div>
+                                    <div class="hidden-xs subtitle-main-news">Пострадавших одного за другим уносят из эпицентра потасовки</div>
+                                </div>
+                            </div>
+
+                            <div class="title-rubric"><a href="#">Главные статьи</a></div>
+
+                            <div class="row">
+                                <div class="col-md-6 top-news">
+                                    <div class="top-img">
+                                        <a href="#"><img src="img/top-news-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text-top-news">
+                                        <div class="title-top-news"><a href="#">Бизнес Авакова от А до Я: как министр за год стал миллиардером</a></div>
+                                        <div class="subtitle-top-news">Предполагалось, об организации иностранной интервенции в Сирию или оказании помощи...</div>
+                                        <div class="author"><a href="#">Богдан Яременко</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 top-news">
+                                    <div class="top-img">
+                                        <a href="#"><img src="img/top-news-2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text-top-news">
+                                        <div class="title-top-news"><a href="#">Дикий Запад: почему на Закарпатье все чаще стреляют <span class="glyphicon glyphicon-paperclip"></span></a></div>
+                                        <div class="subtitle-top-news">Два месяца назад в Мукачево произошли столкновения "Правого сектора" и силовиков...</div>
+                                        <div class="author"><a href="#">Алексей Топалов</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 top-news">
+                                    <div class="top-img">
+                                        <a href="#"><img src="img/top-news-3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text-top-news">
+                                        <div class="title-top-news"><a href="#">Дебальцовский котел. Дневник окруженца <span class="glyphicon glyphicon-camera"></span></a></div>
+                                        <div class="subtitle-top-news">Первое полугодие 2015 года оказалось богатым на уголовные дела против руководителей...</div>
+                                        <div class="author"><a href="#">Борислав Головин</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 top-news">
+                                    <div class="top-img">
+                                        <a href="#"><img src="img/top-news-4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text-top-news">
+                                        <div class="title-top-news"><a href="#">Кто на самом деле поставляет газ в Геническ <span class="glyphicon glyphicon-facetime-video"></span></a></div>
+                                        <div class="subtitle-top-news">Действие социальной ипотеки распространилось и на малоэтажное строительство...</div>
+                                        <div class="author"><a href="#">Алексей Топалов, </a><a href="#">Елена Платонова</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 top-news">
+                                    <div class="top-img">
+                                        <a href="#"><img src="img/top-news-5.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text-top-news">
+                                        <div class="title-top-news"><a href="#">МВФ готовит отказ в кредите из-за нового бюджета</a></div>
+                                        <div class="subtitle-top-news">Как минимум 16 человек погибли, десятки получили ранения в столкновении автобусов... </div>
+                                        <div class="author"><a href="#">Андрей Десницкий</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 top-news">
+                                    <div class="top-img">
+                                        <a href="#"><img src="img/top-news-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text-top-news">
+                                        <div class="title-top-news"><a href="#">Бизнес Авакова от А до Я: как министр за год стал миллиардером</a></div>
+                                        <div class="subtitle-top-news">Предполагалось, об организации иностранной интервенции в Сирию или оказании помощи...</div>
+                                        <div class="author"><a href="#">Богдан Яременко</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a href="#" class="all-link">Все статьи »</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-md-pull-8 newsfeed">
+                            <div class="title-rubric"><a href="#">Последние новости</a></div>
+                            <ul class="list-newsfeed">
+                                <li>
+                                    <div class="time">18:21</div><a href="#">"ДНР" и "ЛНР" потребовали от ЕС принудить Украину к миру</a>
+                                </li>
+                                <li>
+                                    <div class="time">18:14</div><a href="#">В Саудовской Аравии прогремел взрыв в мечети: погибли 17 человек <span class="glyphicon glyphicon-camera"></span></a>
+                                </li>
+                                <li>
+                                    <div class="time">17:59</div><a href="#">В День Независимости в Киеве военного парада не будет <span class="glyphicon glyphicon-paperclip"></span></a>
+                                </li>
+                                <li>
+                                    <div class="time">17:48</div><a href="#">В Киеве полицейский исполнил на уличном пианино хит One Republic <span class="glyphicon glyphicon-facetime-video"></span></a>
+                                </li>
+                                <li>
+                                    <div class="time">17:47</div><a href="#">В Одессе обнаружили подпольные цеха, в которых работали нелегалы из Вьетнама</a>
+                                </li>
+                                <li>
+                                    <div class="time">17:44</div><a href="#">На оккупированной территории ухудшается качество мобильной связи</a>
+                                </li>
+                                <li>
+                                    <div class="time">17:27</div><a href="#">Цена на нефть немного отыграла назад. Brent стоит $49,77 за баррель</a>
+                                </li>
+                                <li>
+                                    <div class="time">18:21</div><a href="#">Новый президент Польши вступил в должность</a>
+                                </li>
+                                <li>
+                                    <div class="time">18:14</div><a href="#">Запрет книг Бивора в России - это интеллектуальное и политическое преступление</a>
+                                </li>
+                                <li>
+                                    <div class="time">18:21</div><a href="#">"ДНР" и "ЛНР" потребовали от ЕС принудить Украину к миру</a>
+                                </li>
+                                <li>
+                                    <div class="time">18:14</div><a href="#">В Саудовской Аравии прогремел взрыв в мечети: погибли 17 человек</a>
+                                </li>
+                                <li>
+                                    <div class="time">17:59</div><a href="#">В День Независимости в Киеве военного парада не будет</a>
+                                </li>
+                                <li>
+                                    <div class="time">17:48</div><a href="#">В Киеве полицейский исполнил на уличном пианино хит One Republic</a>
+                                </li>
+                                <li>
+                                    <div class="time">18:21</div><a href="#">"ДНР" и "ЛНР" потребовали от ЕС принудить Украину к миру</a>
+                                </li>
+                                <li>
+                                    <div class="time">18:14</div><a href="#">В Саудовской Аравии прогремел взрыв в мечети: погибли 17 человек <span class="glyphicon glyphicon-camera"></span></a>
+                                </li>
+                                <li>
+                                    <div class="time">17:59</div><a href="#">В День Независимости в Киеве военного парада не будет <span class="glyphicon glyphicon-paperclip"></span></a>
+                                </li>
+                                <li>
+                                    <div class="time">17:48</div><a href="#">В Киеве полицейский исполнил на уличном пианино хит One Republic <span class="glyphicon glyphicon-facetime-video"></span></a>
+                                </li>
+                                <li>
+                                    <div class="time">17:47</div><a href="#">В Одессе обнаружили подпольные цеха, в которых работали нелегалы из Вьетнама</a>
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="all-link">Все новости »</a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div class="hidden-xs banner" style="padding: 20px 0; text-align: center;"><img src="http://storage.designcrowd.com/design_img/282853/17836/17836_2593928_282853_image.jpg" alt=""></div>
+                        </div>
+
+                        <div class="col-xs-12 select-news visible-xs">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="title-rubric"><a href="#">Выбор страны</a></div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-4 main-hardnews">
+                                    <div class="rubric-main-photo">
+                                        <a href="#"><img src="img/main-politics.jpg" alt=""></a>
+                                    </div>
+                                    <div class="main-news-title-rubric"><a href="#">Как включиться в работу после новогодних праздников</a><span class="glyphicon glyphicon-facetime-video"></span></div>
+                                    <div class="main-news-subtitle-rubric">«Съешьте лягушку», а грусть уменьшите при помощи канцелярской скрепки</div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 main-hardnews">
+                                    <div class="rubric-main-photo">
+                                        <a href="#"><img src="img/softnews-main.jpg" alt=""></a>
+                                    </div>
+                                    <div class="main-news-title-rubric"><a href="#">Полиция возбудила дело по факту массовой драки на Драгобрате</a></div>
+                                    <div class="main-news-subtitle-rubric">Участники инцидента ранее нарушали закон, сообщил глава Закарпатской ОГА</div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 main-hardnews">
+                                    <div class="rubric-main-photo">
+                                        <a href="#"><img src="img/main-politics.jpg" alt=""></a>
+                                    </div>
+                                    <div class="main-news-title-rubric"><a href="#">"Валенсия" встала в очередь за Ярмоленко</a></div>
+                                    <div class="main-news-subtitle-rubric">Испанцы направили запрос в киевский клуб</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 main-right-column">
+
+                    <div class="live-block hidden-xs">
+                        <div class="title-rubric live">Видео</div>
+
+                        <iframe width="100%" src="http://www.youtube.com/embed/L3nIZjsl7N0" frameborder="0" allowfullscreen=""></iframe>
+
+                        <a class="live-subscription" href="#">"Национальное движение" Яроша может поднять восстание</a>
+
+                    </div>
+
+                    <div class="popular-block">
+                        <div class="title-rubric">Популярное</div>
+
+                        <div class="popular-news">
+                            <div class="number">1</div>
+                            <div class="text-popular"><a href="#" class="link-popular">10 событий и явлений, определивших сегодняшний день</a></div>
+                        </div>
+                        <div class="popular-news">
+                            <div class="number">2</div>
+                            <div class="text-popular"><a href="#" class="link-popular">В Донецке взлетели цены на бензин</a></div>
+                        </div>
+                        <div class="popular-news">
+                            <div class="number">3</div>
+                            <div class="text-popular"><a href="#" class="link-popular">Пожарные грозят бунтом из-за низких зарплат и старой техники</a></div>
+                        </div>
+                        <div class="popular-news">
+                            <div class="number">4</div>
+                            <div class="text-popular"><a href="#" class="link-popular">СМИ РФ: Киев предложил Москве объединить конвои на Донбасс</a></div>
+                        </div>
+                        <div class="popular-news">
+                            <div class="number">5</div>
+                            <div class="text-popular"><a href="#" class="link-popular">США встали на защиту Греции</a></div>
+                        </div>
+                    </div>
+
+                    <div class="social-news hidden-xs">
+                        <div class="title-rubric hidden-xs">Выход в свет</div>
+
+                        <div class="socialnews-image">
+                            <a href="#">
+                                <img src="img/main-news.jpg">
+                            </a>
+                        </div>
+                        <div class="socialnews-title">
+                            <a href="#">Элитные авто депутата Геращенко</a>
+                        </div>
+                        <div class="socialnews-subtitle">
+                            При этом седан заместителя главы полиции Киева оказался почти в два раза дешевле
+                        </div>
+                    </div>
+
+                    <div class="hidden-sm hidden-xs banner" style="padding-top: 20px"><img src="img/banner600.jpg" alt=""></div>
+
+                </div>
+            </div>
+
+
+            <div class="row blogs">
+                <div class="col-md-12">
+                    <div class="title-rubric"><a href="#">Блоги</a></div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 opinion-block">
+                    <div class="opinion-img">
+                        <a href="#"><img src="img/opinion-1.png" alt=""></a>
+                    </div>
+                    <div class="opinion-text">
+                        <div class="name"><a href="#">Юрий Павленко</a></div>
+                        <div class="opinion-title"><a href="#">Сколько и каких банков останется после реформ НБУ</a></div>
+                        <div class="opinion-subtitle">О зачистке украинской банковской системы</div>
+                    </div>
+                    <span class="clearfix"></span>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 opinion-block">
+                    <div class="opinion-img">
+                        <a href="#"><img src="img/opinion-2.png" alt=""></a>
+                    </div>
+                    <div class="opinion-text">
+                        <div class="name"><a href="#">Александр Охрименко</a></div>
+                        <div class="opinion-title"><a href="#">Для бизнеса коррупция – не проблема. Есть проблемы пострашнее</a></div>
+                        <div class="opinion-subtitle">Предприниматели назвали 12 проблем, которые мешают их работе</div>
+                    </div>
+                    <span class="clearfix"></span>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 opinion-block">
+                    <div class="opinion-img">
+                        <a href="#"><img src="img/opinion-3.png" alt=""></a>
+                    </div>
+                    <div class="opinion-text">
+                        <div class="name"><a href="#">Олег Волошин</a></div>
+                        <div class="opinion-title"><a href="#">Евроинтеграция: встреча с реальностью</a></div>
+                        <div class="opinion-subtitle">О греческом дефолте</div>
+                    </div>
+                    <span class="clearfix"></span>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 opinion-block">
+                    <div class="opinion-img">
+                        <a href="#"><img src="img/opinion-4.png" alt=""></a>
+                    </div>
+                    <div class="opinion-text">
+                        <div class="name"><a href="#">Глеб Простаков</a></div>
+                        <div class="opinion-title"><a href="#">Сколько и каких банков останется после реформ НБУ</a></div>
+                        <div class="opinion-subtitle">О зачистке украинской банковской системы</div>
+                    </div>
+                    <span class="clearfix"></span>
+                </div>
+            </div>
+
+
+            <div class="row photogallery">
+                <div class="col-md-12">
+                    <div class="title-rubric"><a href="#">Фото / видео</a></div>
+                </div>
+
+                <div id="photo-teasers" class="tab-pane active" role="tabpanel">
+                    <div class="col-md-9 photo-gallery-main">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <a href="#"><img src="img/photo-gallery/tmp-1.jpg" alt=""></a>
+
+                                    <div class="carousel-caption">
+                                        <a href="#" class="photo-title">
+                                            Из-за снегопада в Польше погибли люди
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="img/photo-gallery/tmp-2.jpg" alt=""></a>
+
+                                    <div class="carousel-caption">
+                                        <a href="#" class="photo-title">
+                                            Из-за снегопада в Польше погибли люди
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="img/photo-gallery/tmp-3.jpg" alt=""></a>
+
+                                    <div class="carousel-caption">
+                                        <a href="#" class="photo-title">
+                                            Из-за снегопада в Польше погибли люди
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 hidden-xs photo-gallery-top">
+                        <div class="row">
+
+                            <div class="col-md-12 col-sm-4">
+                                <div class="top-photo">
+                                    <a href="#">
+                                        <img src="img/photo-2.jpg" alt="">
+                                        <div class="photo-caption-top">
+                                            <div class="photo-title-top">
+                                                Шедевры киевского фотографа, снятые на обычную пленку
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-4">
+                                <div class="top-photo">
+                                    <a href="#">
+                                        <img src="img/photo-3.jpg" alt="">
+                                        <div class="photo-caption-top">
+                                            <div class="photo-title-top">
+                                                Рианна покрасовалась в мини-бикини и перьях
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-4">
+                                <div class="top-photo">
+                                    <a href="#">
+                                        <img src="img/photo-4.jpg" alt="">
+                                        <div class="photo-caption-top">
+                                            <div class="photo-title-top">
+                                                Результаты катастрофы в китайском городе
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-3 infographic main-hardnews">
+                    <div class="title-rubric"><a href="#">Инфографика</a></div>
+                    <div class="rubric-main-photo">
+                        <a href="#"><img src="img/softnews-main.jpg" alt=""></a>
+                    </div>
+                    <div class="main-news-title-rubric"><a href="#">Как распознать опухоль головного мозга</a><span class="glyphicon glyphicon-camera"></span></div>
+                    <div class="main-news-subtitle-rubric">Кто состоит в группе риска и как себя обезопасить</div>
+                </div>
+                <div class="col-md-9 select-news hidden-xs">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-rubric"><a href="#">Выбор страны</a></div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 main-hardnews">
+                            <div class="rubric-main-photo">
+                                <a href="#"><img src="img/main-politics.jpg" alt=""></a>
+                            </div>
+                            <div class="main-news-title-rubric"><a href="#">Как включиться в работу после новогодних праздников</a><span class="glyphicon glyphicon-facetime-video"></span></div>
+                            <div class="main-news-subtitle-rubric">«Съешьте лягушку», а грусть уменьшите при помощи канцелярской скрепки</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 main-hardnews">
+                            <div class="rubric-main-photo">
+                                <a href="#"><img src="img/softnews-main.jpg" alt=""></a>
+                            </div>
+                            <div class="main-news-title-rubric"><a href="#">Полиция возбудила дело по факту массовой драки на Драгобрате</a></div>
+                            <div class="main-news-subtitle-rubric">Участники инцидента ранее нарушали закон, сообщил глава Закарпатской ОГА</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 main-hardnews">
+                            <div class="rubric-main-photo">
+                                <a href="#"><img src="img/main-politics.jpg" alt=""></a>
+                            </div>
+                            <div class="main-news-title-rubric"><a href="#">"Валенсия" встала в очередь за Ярмоленко</a></div>
+                            <div class="main-news-subtitle-rubric">Испанцы направили запрос в киевский клуб</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="help-push" style="height: 50px;"></div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="dotted-line"></div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="logo">
+                    <a href="#"><img src="img/logo-gs.jpg" alt=""></a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 menu">
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Реклама</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 info">
+                <div class="social-box">
+                    <a href="#">
+                        <div class="social-item">
+                            <span class="fa fa-facebook"></span>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="social-item">
+                            <span class="fa fa-vk"></span>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="social-item">
+                            <span class="fa fa-twitter"></span>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="social-item more">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>

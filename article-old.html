@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stranaua-article</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/stranastyle.css" rel="stylesheet">
+    <link href="css/innerstyle.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="container">
+            <div class="row hidden-xs" style="text-align: center;">
+                <img src="img/banner728.jpg" alt="">
+            </div>
+
+            <div class="row info-header hidden-xs">
+                <div class="col-md-8">
+                    <span class="top-date">6 августа 2015</span>
+                    <span class="currency"><a href="#">USD<span class="glyphicon glyphicon-triangle-top"></span><span class="name-course">23.16</span></a></span>
+                    <span class="currency"><a href="#">EUR<span class="glyphicon glyphicon-triangle-top"></span><span class="name-course">25.38</span></a></span>
+                    <span class="currency"><a href="#">нефть<span class="glyphicon glyphicon-triangle-bottom"></span><span class="name-course">35.13</span></a></span>
+                    <span class="currency"><a href="#">сталь<span class="glyphicon glyphicon-triangle-bottom"></span><span class="name-course">220.00</span></a></span>
+                    <span class="currency"><a href="#">пшеница<span class="glyphicon glyphicon-triangle-top"></span><span class="name-course">461.00</span></a></span>
+                </div>
+
+                <div class="col-md-4 info-right">
+                    <div class="social-box">
+                        <a href="#">
+                            <div class="social-item">
+                                <span class="fa fa-facebook"></span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="social-item">
+                                <span class="fa fa-vk"></span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="social-item">
+                                <span class="fa fa-twitter"></span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="social-item more">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="top-search">
+                        <form role="search" method="get" action="#">
+                            <div class="search-form">
+                                <label>
+                                    <input type="text" class="search-field" placeholder="Поиск..." value="" name="s">
+                                </label>
+                                <button type="submit" class="btn btn-default search-submit"><i class="fa fa-search"> </i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="dotted-line"></div>
+                </div>
+            </div>
+
+            <div class="row site-header hidden-xs">
+                <div class="col-md-4 col-xs-12 logo">
+                    <a href="#"><img src="img/logo.jpg" alt=""></a>
+                </div>
+
+                <div class="col-md-3 col-md-offset-1 col-sm-6 col-xs-12 promo-news">
+                    <a href="#">Порошенко запретил мультфильм про дядю Федора и Печкина</a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 promo-opinion">
+                    <div class="img">
+                        <a href="#"><img src="img/opinion-1.png" alt="" width="100"></a>
+                    </div>
+                    <div class="text">
+                        <div class="name"><a href="#">Ангела Меркель</a></div>
+                        <div class="title"><a href="#">Наш главный принцип - баба тоже человек</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <nav class="navbar navbar-default navbar-fixed main-menu" role="navigation">
+                        <div class="navbar-header">
+                            <div class="left-block-xs">
+                                <a href="#" class=" visible-xs"><img src="img/logo.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <button type="button" class="btn navbar-toggle more-xs" data-toggle="collapse" data-target="#main-menu">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn navbar-toggle search-xs" data-toggle="collapse" data-target="#search-me"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+
+                        <div id="search-me" class="collapse">
+                            <div class="top-search">
+                                <form role="search" method="get" action="#">
+                                    <div class="search-form">
+                                        <label>
+                                            <input type="text" class="search-field" placeholder="Поиск..." value="" name="s">
+                                        </label>
+                                        <button type="submit" class="btn btn-default search-submit"><i class="fa fa-search"> </i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="main-menu">
+
+                            <ul class="nav navbar-nav main-menu">
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">10 событий дня</a></li>
+                                <li><a href="#">Блоги</a></li>
+                                <li><a href="#">Инфографика</a></li>
+                                <li><a href="#">Фото / Видео</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="row main-header-news hidden-xs">
+                <div class="col-md-6">
+                    <div class="link-text"><a href="#">В Киеве не исключают Минска-3</a></div>
+                    <div class="link-text"><a href="#">На юге Украины из-за непогоды закрли трассы</a></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="link-text"><a href="#">Польша и Словакия отказались принимать беженцев-мусульман</a></div>
+                    <div class="link-text"><a href="#">Меркель верит в результативность переговоров</a></div>
+                </div>
+            </div>
+
+            <div class="row main-header-news visible-xs">
+                <marquee>
+                    <span class="link-text"><a href="#">В Киеве не исключают Минска-3</a></span>
+                    <span class="link-text"><a href="#">На юге Украины из-за непогоды закрли трассы</a></span>
+                    <span class="link-text"><a href="#">Польша и Словакия отказались принимать беженцев-мусульман</a></span>
+                    <span class="link-text"><a href="#">Меркель верит в результативность переговоров</a></span>
+                </marquee>
+            </div>
+
+            <div class="row blogs-under-header visible-xs">
+
+                <div id="carousel-headernews" class="col-xs-12 carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="promo-news">
+                                <a href="#">Порошенко запретил мультфильм про дядю Федора и Печкина</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 promo-opinion">
+                                <div class="text">
+                                    <div class="name"><a href="#">Ангела Меркель</a></div>
+                                    <div class="title"><a href="#">Наш главный принцип - баба тоже человек</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#carousel-headernews" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-headernews" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 article">
+
+                    <div class="breadcrumbs">
+                        <a href="#">Страна</a>»<a href="#">Реконструкция</a>
+                    </div>
+
+                    <div class="article-title">
+                        Польша заинтересовалась украинскими комплектующими для модернизации военной техники
+                    </div>
+
+                    <div class="article-subtitle">
+                        Украина планирует не только поставки танкового оборудования, но и сотрудничество в сфере авиации
+                    </div>
+
+                    <div class="article-meta">
+                        <a href="#" class="author-article">Богдан Яременко</a>
+                        <time class="date">16:15,  10 января 2016</time>
+                        <div class="social-box visible-xs">
+                            <a href="#">
+                                <div class="social-item">
+                                    <span class="fa fa-facebook"></span>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="social-item">
+                                    <span class="fa fa-vk"></span>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="social-item">
+                                    <span class="fa fa-twitter"></span>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="social-item more">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="left-article hidden-xs">
+                        <div id="mySocial" data-spy="affix" data-offset-top="30">
+                            <div class="social-box">
+                                <a href="#" style="display: block">
+                                    <div class="social-item">
+                                        <span class="fa fa-facebook" style="font-size: 22px;"></span>
+                                    </div>
+                                </a>
+
+                                <a href="#" style="display: block">
+                                    <div class="social-item">
+                                        <span class="fa fa-vk" style="font-size: 22px;"></span>
+                                    </div>
+                                </a>
+
+                                <a href="#" style="display: block">
+                                    <div class="social-item">
+                                        <span class="fa fa-twitter" style="font-size: 22px;"></span>
+                                    </div>
+                                </a>
+
+                                <a href="#" style="display: block">
+                                    <div class="social-item more">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="article-text">
+                        <div class="article-image">
+                            <img src="img/tmp.jpg" alt="">
+                        </div>
+
+                        <div class="caption">
+                            <span class="glyphicon glyphicon-camera"></span>Фото: strana.ua. Украина и Польша ведут переговоры о модернизации танков
+                        </div>
+
+                        <p>В Евразийском деловом совете (ЕДС) предлагают одновременно с мостом через Керченский пролив построить также за счет частных инвестиций еще один транспортный переход - тоннель.</p>
+                        <p>ЕДС - орган, созданный в рамках Евразийского экономического сообщества (ЕврАзЭС) и призванный содействовать реализации евразийской экономической интеграции стран участниц.</p>
+                        <p>Об идеи строительства транспортного перехода журналистам рассказал председатель Общественной палаты Крыма Григорий Иоффе.</p>
+                        <p>"Два транспортных перехода через Керченский пролив – это всегда лучше, чем один. Предлагаемый проект не является альтернативой мосту, а рассматривается в качестве его дополнения", – отметил Иоффе.</p>
+                        <p>На базе Общественной палаты полуострова будет создана рабочая группа, в которую войдут эксперты и ученые крымской академии наук, призванные изучать вопрос строительства тоннеля.</p>
+                        <p>По словам Иоффе, если Керченский мост решено строить за бюджетные средства, то тоннель предлагается возвести с помощью инвесторов.</p>
+
+                        <div class="internal-link">
+                            <div class="read-also-inner">Читайте также</div>
+                            <a href="#" class="title">Бизнес Авакова от А до Я: как министр за год стал миллиардером</a>
+                            <div href="#" class="subtitle">Предполагалось, об организации иностранной интервенции</div>
+                        </div>
+                        <p>Глава комитета по финансовым рынкам и интегрированному капиталу Евразийского делового совета Борис Зверюков, в свою очередь, добавил, что ориентировочная стоимость проекта составит от 80 млрд до 100 млрд рублей (34-42 млрд гривен)..</p>
+                        <p>Кроме транспортной функции, тоннель призван обеспечивать жизнедеятельность полуострова: "В проекте мы предусмотрели проводку водоводов, техническую воду мы планируем сбрасывать из Кубани в Крым. Мы планируем проведение силовых кабелей и проводку средств связи".</p>
+                        <p><b>Предыстория</b></p>
+                        <p>В РФ уже закончили работу над проектом керченского моста, приступить к строительству которого планируют уже в сентябре 2015 года.</p>
+                        <p>Контракт на возведение Керченского моста стоимостью 228 млрд рублей заключен с компанией "Стройгазмонтаж", которую связывают с российским миллиардером Аркадием Ротенбергом.</p>
+                    </div>
+
+                    <div class="tags">
+                        Теги:
+                        <a href="#"><span class="tag">модернизация</span></a>
+                        <a href="#"><span class="tag">Польша</span></a>
+                        <a href="#"><span class="tag">армия</span></a>
+                        <a href="#"><span class="tag">вооружение</span></a>
+                    </div>
+
+                    <div class="see-also-news">
+                        <div class="title-rubric">Читайте также</div>
+
+                        <article class="see-also clearfix">
+                            <div class="see-also-rubric"><a href="#">Расследование</a></div>
+                            <div class="see-also-img">
+                                <a href="#"><img src="img/top-news-1.jpg" alt=""></a>
+                            </div>
+                            <div class="see-also-text">
+                                <div class="see-also-title"><a href="#">Бизнес Авакова от А до Я: как министр за год стал миллиардером</a></div>
+                                <div class="see-also-subtitle">Предполагалось, об организации иностранной интервенции в Сирию или оказании военной помощи повстанцам, увеличить поставки грузов...</div>
+                                <div class="see-also-author"><a href="#">Богдан Яременко</a></div>
+                            </div>
+                        </article>
+
+                        <article class="see-also clearfix">
+                            <div class="see-also-rubric"><a href="#">Специальный репортаж</a></div>
+                            <div class="see-also-img">
+                                <a href="#"><img src="img/top-news-2.jpg" alt=""></a>
+                            </div>
+                            <div class="see-also-text">
+                                <div class="see-also-title"><a href="#">Дикий Запад: почему на Закарпатье все чаще стреляют</a></div>
+                                <div class="see-also-subtitle">Два месяца назад в Мукачево произошли столкновения "Правого сектора" и силовиков. Причиной называли ситуацию с контрабандой...</div>
+                                <div class="see-also-author"><a href="#">Алексей Топалов</a></div>
+                            </div>
+                        </article>
+
+                        <article class="see-also clearfix">
+                            <div class="see-also-rubric"><a href="#">Реконструкция</a></div>
+                            <div class="see-also-img">
+                                <a href="#"><img src="img/top-news-3.jpg" alt=""></a>
+                            </div>
+                            <div class="see-also-text">
+                                <div class="see-also-title"><a href="#">Дебальцовский котел. Дневник окруженца</a></div>
+                                <div class="see-also-subtitle">Первое полугодие 2015 года оказалось богатым на уголовные дела против руководителей кредитных организаций...</div>
+                                <div class="see-also-author"><a href="#">Борислав Головин</a></div>
+                            </div>
+                        </article>
+
+                        <article class="see-also clearfix">
+                            <div class="see-also-rubric"><a href="#">Анализ и подоплека</a></div>
+                            <div class="see-also-img">
+                                <a href="#"><img src="img/top-news-3.jpg" alt=""></a>
+                            </div>
+                            <div class="see-also-text">
+                                <div class="see-also-title"><a href="#">Кто на самом деле поставляет газ в Геническ</a></div>
+                                <div class="see-also-subtitle">Действие социальной ипотеки распространилось и на малоэтажное строительство, включая таунхаусы и отдельные коттеджи...</div>
+                                <div class="see-also-author"><a href="#">Алексей Топалов, </a><a href="#">Елена Платонова</a></div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 main-right-column">
+
+                    <div class="right-top-news hidden-xs">
+                        <div class="title-rubric hidden-xs">Главное</div>
+
+                        <div class="right-top-news-image">
+                            <a href="#">
+                                <img src="img/main-news.jpg">
+                            </a>
+                        </div>
+                        <div class="right-top-news-title">
+                            <a href="#">Бойня под радой: реконструкция событий. Кто отдал приказ бросать гранату</a>
+                        </div>
+                        <div class="right-top-news-subtitle">
+                            Пострадавших одного за другим уносят из эпицентра
+                        </div>
+                    </div>
+
+                    <div class="hidden-sm hidden-xs banner" style="padding-top: 20px"><img src="img/banner600.jpg" alt=""></div>
+
+                    <div class="live-block hidden-xs inner">
+                        <div class="title-rubric live">Live</div>
+
+                        <video width="300" height="169" controls="controls" autoplay muted src="">
+                            <source src="video.mp4" type="video/mp4">
+                            <source src="video.ogg" type="video/ogg">
+                            <source src="video.webm" type="video/webm">
+                            Тег video не поддерживается вашим браузером.
+                        </video>
+
+                    </div>
+
+                    <div class="right-articles-block">
+
+                        <div class="title-rubric">Статьи</div>
+
+                        <div class="right-articles clearfix">
+                            <div class="rubric"><a href="#">Расследование</a></div>
+                            <div class="title-top-news"><a href="#">Бизнес Авакова от А до Я: как министр за год стал миллиардером</a></div>
+                            <div class="subtitle-top-news">Предполагалось, об организации иностранной интервенции в Сирию или оказании военной помощи повстанцам, увеличить поставки грузов...</div>
+                            <div class="author"><a href="#">Богдан Яременко</a></div>
+                        </div>
+
+                        <div class="right-articles clearfix">
+                            <div class="rubric"><a href="#">Специальный репортаж</a></div>
+                            <div class="title-top-news"><a href="#">Дикий Запад: почему на Закарпатье все чаще стреляют</a></div>
+                            <div class="subtitle-top-news">Два месяца назад в Мукачево произошли столкновения "Правого сектора" и силовиков. Причиной называли ситуацию с контрабандой...</div>
+                            <div class="author"><a href="#">Алексей Топалов</a></div>
+                        </div>
+
+                        <div class="right-articles clearfix">
+                            <div class="rubric"><a href="#">Реконструкция</a></div>
+                            <div class="title-top-news"><a href="#">Дебальцовский котел. Дневник окруженца</a></div>
+                            <div class="subtitle-top-news">Первое полугодие 2015 года оказалось богатым на уголовные дела против руководителей кредитных организаций...</div>
+                            <div class="author"><a href="#">Борислав Головин</a></div>
+                        </div>
+
+                        <div class="right-articles clearfix">
+                            <div class="rubric"><a href="#">Анализ и подоплека</a></div>
+                            <div class="title-top-news"><a href="#">Кто на самом деле поставляет газ в Геническ</a></div>
+                            <div class="subtitle-top-news">Действие социальной ипотеки распространилось и на малоэтажное строительство, включая таунхаусы и отдельные коттеджи...</div>
+                            <div class="author"><a href="#">Алексей Топалов, </a><a href="#">Елена Платонова</a></div>
+                        </div>
+
+                        <div class="right-articles clearfix">
+                            <div class="rubric"><a href="#">Анализ и подоплека</a></div>
+                            <div class="title-top-news"><a href="#">МВФ готовит отказ в кредите из-за нового бюджета</a></div>
+                            <div class="subtitle-top-news">Как минимум 16 человек погибли, десятки получили ранения в лобовом столкновении двух пассажирских автобусов в Хабаровске... </div>
+                            <div class="author"><a href="#">Андрей Десницкий</a></div>
+                        </div>
+
+                    </div>
+
+                    <div class="popular-block">
+                        <div class="title-rubric">Популярное</div>
+
+                        <div class="popular-news">
+                            <div class="number">1</div>
+                            <div class="text-popular"><a href="#" class="link-popular">10 событий и явлений, определивших сегодняшний день</a></div>
+                        </div>
+                        <div class="popular-news">
+                            <div class="number">2</div>
+                            <div class="text-popular"><a href="#" class="link-popular">В Донецке взлетели цены на бензин</a></div>
+                        </div>
+                        <div class="popular-news">
+                            <div class="number">3</div>
+                            <div class="text-popular"><a href="#" class="link-popular">Пожарные грозят бунтом из-за низких зарплат и старой техники</a></div>
+                        </div>
+                        <div class="popular-news">
+                            <div class="number">4</div>
+                            <div class="text-popular"><a href="#" class="link-popular">СМИ РФ: Киев предложил Москве объединить конвои на Донбасс</a></div>
+                        </div>
+                        <div class="popular-news">
+                            <div class="number">5</div>
+                            <div class="text-popular"><a href="#" class="link-popular">США встали на защиту Греции</a></div>
+                        </div>
+                    </div>
+
+                    <div class="social-news hidden-xs">
+                        <div class="title-rubric hidden-xs">Выход в свет</div>
+
+                        <div class="socialnews-image">
+                            <a href="#">
+                                <img src="img/main-news.jpg">
+                            </a>
+                        </div>
+                        <div class="socialnews-title">
+                            <a href="#">Элитные авто депутата Геращенко</a>
+                        </div>
+                        <div class="socialnews-subtitle">
+                            При этом седан заместителя главы полиции Киева оказался почти в два раза дешевле
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row blogs">
+                <div class="col-md-12">
+                    <div class="title-rubric"><a href="#">Блоги</a></div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 opinion-block">
+                    <div class="opinion-img">
+                        <a href="#"><img src="img/opinion-1.png" alt="" width="100"></a>
+                    </div>
+                    <div class="opinion-text">
+                        <div class="name"><a href="#">Юрий Павленко</a></div>
+                        <div class="opinion-title"><a href="#">Сколько и каких банков останется после реформ НБУ</a></div>
+                        <div class="opinion-subtitle">О зачистке украинской банковской системы</div>
+                    </div>
+                    <span class="clearfix"></span>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 opinion-block">
+                    <div class="opinion-img">
+                        <a href="#"><img src="img/opinion-2.png" alt="" width="100"></a>
+                    </div>
+                    <div class="opinion-text">
+                        <div class="name"><a href="#">Александр Охрименко</a></div>
+                        <div class="opinion-title"><a href="#">Для бизнеса коррупция – не проблема. Есть проблемы пострашнее</a></div>
+                        <div class="opinion-subtitle">Предприниматели назвали 12 проблем, которые мешают их работе</div>
+                    </div>
+                    <span class="clearfix"></span>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 opinion-block">
+                    <div class="opinion-img">
+                        <a href="#"><img src="img/opinion-3.png" alt="" width="100"></a>
+                    </div>
+                    <div class="opinion-text">
+                        <div class="name"><a href="#">Олег Волошин</a></div>
+                        <div class="opinion-title"><a href="#">Евроинтеграция: встреча с реальностью</a></div>
+                        <div class="opinion-subtitle">О греческом дефолте</div>
+                    </div>
+                    <span class="clearfix"></span>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 opinion-block">
+                    <div class="opinion-img">
+                        <a href="#"><img src="img/opinion-4.png" alt="" width="100"></a>
+                    </div>
+                    <div class="opinion-text">
+                        <div class="name"><a href="#">Глеб Простаков</a></div>
+                        <div class="opinion-title"><a href="#">Сколько и каких банков останется после реформ НБУ</a></div>
+                        <div class="opinion-subtitle">О зачистке украинской банковской системы</div>
+                    </div>
+                    <span class="clearfix"></span>
+                </div>
+            </div>
+
+
+            <div class="row photogallery">
+                <div class="col-md-12">
+                    <div class="title-rubric"><a href="#">Фото / видео</a></div>
+                </div>
+
+                <div id="photo-teasers" class="tab-pane active" role="tabpanel">
+                    <div class="col-md-9 photo-gallery-main">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <a href="#"><img src="img/photo-gallery/tmp-1.jpg" alt=""></a>
+
+                                    <div class="carousel-caption">
+                                        <a href="#" class="photo-title">
+                                            Из-за снегопада в Польше погибли люди
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="img/photo-gallery/tmp-2.jpg" alt=""></a>
+
+                                    <div class="carousel-caption">
+                                        <a href="#" class="photo-title">
+                                            Из-за снегопада в Польше погибли люди
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="img/photo-gallery/tmp-3.jpg" alt=""></a>
+
+                                    <div class="carousel-caption">
+                                        <a href="#" class="photo-title">
+                                            Из-за снегопада в Польше погибли люди
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 hidden-xs photo-gallery-top">
+                        <div class="row">
+
+                            <div class="col-md-12 col-sm-4">
+                                <div class="top-photo">
+                                    <a href="#">
+                                        <img src="img/photo-2.jpg" alt="">
+                                        <div class="photo-caption-top">
+                                            <div class="photo-title-top">
+                                                Шедевры киевского фотографа, снятые на обычную пленку
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-4">
+                                <div class="top-photo">
+                                    <a href="#">
+                                        <img src="img/photo-3.jpg" alt="">
+                                        <div class="photo-caption-top">
+                                            <div class="photo-title-top">
+                                                Рианна покрасовалась в мини-бикини и перьях
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-4">
+                                <div class="top-photo">
+                                    <a href="#">
+                                        <img src="img/photo-4.jpg" alt="">
+                                        <div class="photo-caption-top">
+                                            <div class="photo-title-top">
+                                                Результаты катастрофы в китайском городе
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-3 infographic main-hardnews">
+                    <div class="title-rubric"><a href="#">Инфографика</a></div>
+                    <div class="rubric-main-photo">
+                        <a href="#"><img src="img/softnews-main.jpg" alt=""></a>
+                    </div>
+                    <div class="main-news-title-rubric"><a href="#">Как распознать опухоль головного мозга</a><span class="glyphicon glyphicon-camera"></span></div>
+                    <div class="main-news-subtitle-rubric">Кто состоит в группе риска и как себя обезопасить</div>
+                </div>
+                <div class="col-md-9 select-news">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-rubric"><a href="#">Выбор страны</a></div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 main-hardnews">
+                            <div class="rubric-main-photo">
+                                <a href="#"><img src="img/main-politics.jpg" alt=""></a>
+                            </div>
+                            <div class="main-news-title-rubric"><a href="#">Как включиться в работу после новогодних праздников</a><span class="glyphicon glyphicon-facetime-video"></span></div>
+                            <div class="main-news-subtitle-rubric">«Съешьте лягушку», а грусть уменьшите при помощи канцелярской скрепки</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 main-hardnews">
+                            <div class="rubric-main-photo">
+                                <a href="#"><img src="img/softnews-main.jpg" alt=""></a>
+                            </div>
+                            <div class="main-news-title-rubric"><a href="#">Полиция возбудила дело по факту массовой драки на Драгобрате</a></div>
+                            <div class="main-news-subtitle-rubric">Участники инцидента ранее нарушали закон, сообщил глава Закарпатской ОГА</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 main-hardnews">
+                            <div class="rubric-main-photo">
+                                <a href="#"><img src="img/main-politics.jpg" alt=""></a>
+                            </div>
+                            <div class="main-news-title-rubric"><a href="#">"Валенсия" встала в очередь за Ярмоленко</a></div>
+                            <div class="main-news-subtitle-rubric">Испанцы направили запрос в киевский клуб</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="help-push" style="height: 50px;"></div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="dotted-line"></div>
+            </div>
+
+            <div class="col-md-6 col-sm-6">
+                <div class="logo">
+                    <a href="#"><img src="img/logo-gs.jpg" alt="" width="200"></a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 info">
+                <div class="social-box">
+                    <a href="#">
+                        <div class="social-item">
+                            <span class="fa fa-facebook"></span>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="social-item">
+                            <span class="fa fa-vk"></span>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="social-item">
+                            <span class="fa fa-twitter"></span>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="social-item more">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#mySocial").affix({
+            offset: {
+                top: $('.article-text').offset().top-30,
+                bottom: $('.article-text').offset().bottom
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
