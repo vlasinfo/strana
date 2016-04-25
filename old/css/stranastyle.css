@@ -331,7 +331,7 @@ footer {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), transparent);
 }
 .image-single .main-title .title-main-news {
-  font: bold 22px Arial, sans-serif;
+  font: bold 26px Arial, sans-serif;
   padding-bottom: 10px;
 }
 .image-single .main-title .title-main-news a {
@@ -339,7 +339,7 @@ footer {
   color: #ffffff;
 }
 .image-single .main-title .subtitle-main-news {
-  font: 16px Arial, sans-serif;
+  font: 20px Arial, sans-serif;
   padding-bottom: 15px;
   color: #ffffff;
 }
@@ -440,7 +440,7 @@ footer {
 }
 .live-subscription {
   color: #596c73;
-  font: bold 18px Arial, sans-serif;
+  font: bold 20px Arial, sans-serif;
   padding: 10px 0;
 }
 /*--------------End LIVE video------------------*/
@@ -684,7 +684,6 @@ footer .container .info .social-box .social-item {
     padding-right: 15px;
     margin-left: 0;
   }
-
 }
 @media screen and (max-width: 991px) {
   .newsfeed,
@@ -706,7 +705,6 @@ footer .container .info .social-box .social-item {
   .popular-news .text-popular {
     width: 90%;
   }
-
 }
 @media screen and (max-width: 767px) {
   .image-single .main-title .title-main-news {
@@ -809,63 +807,4 @@ footer .container .info .social-box .social-item {
   .main-header-news .link-text {
     display: inline-block;
   }
-}
-
-
-
-.image-single .main-title .subtitle-main-news {font: 16px Arial,sans-serif;}
-
-@media screen and (max-width: 1200px) {  
-.newsfeed ul.list-newsfeed li {
-  font: 17px Arial, sans-serif;
-}
-.newsfeed ul.list-newsfeed li .time {
-  padding: 2px 5px;
-}
-.image-single .main-title .title-main-news {
-  font: bold 19px Arial, sans-serif;
-  padding-bottom: 10px;
-}
-.top-news .title-top-news {
-  font: bold 18px Arial, sans-serif;
-}
-.top-news .text-top-news .subtitle-top-news {
-  font: 17px Arial, sans-serif;
-}
-.social-news .socialnews-subtitle {
-  font: 17px Arial, sans-serif;
-}
-.photo-gallery-top .top-photo .photo-caption-top .photo-title-top {
-  font-size: 14px;
-  }
-  .main-hardnews .main-news-title-rubric a {
-  font: bold 18px Arial, sans-serif;
-}
-}
-
-@media screen and (max-width: 991px) {
-  .newsfeed ul.list-newsfeed li {
-  font: 20px Arial, sans-serif;
-}
-.newsfeed ul.list-newsfeed li .time {
-  padding: 4px 5px;
-}
-.image-single .main-title .title-main-news {
-  font: bold 22px Arial, sans-serif;
-}
-.top-news .title-top-news {
-  font: bold 20px Arial, sans-serif;
-}
-.top-news .text-top-news .subtitle-top-news {
-  font: 18px Arial, sans-serif;
-}
-.social-news .socialnews-subtitle {
-  font: 18px Arial, sans-serif;
-}
-.photo-gallery-top .top-photo .photo-caption-top .photo-title-top {
-  font-size: 15px;
-  }
-  .main-hardnews .main-news-title-rubric a {
-  font: bold 20px Arial, sans-serif;
-}
 }

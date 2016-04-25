@@ -600,6 +600,7 @@
   margin: 0 13px 10px 0;
 }
 .opinion-author .opinion-img img {
+  width: 130px;
   border-radius: 50%;
 }
 .opinion-author .name {
