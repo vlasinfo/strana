@@ -7822,7 +7822,7 @@ header .main-header-news, footer .main-header-news {
     font: bold 17px Arial, sans-serif;
     padding-top: 18px;
     padding-bottom: 6px;
-    margin: 0 0 23px;
+    margin: 0 0 20px;
     background-color: #f7f7f7
 }
 
@@ -8957,12 +8957,12 @@ footer .container .info .social-box .social-item {
     font: 16px Arial, sans-serif;
     padding: 5px 10px;
     background-color: #f1f1f1;
-    display: block
+    display: block;
 }
-.select-date .select-button .calend input:focus + i,
-.select-date .select-button .calend:hover i {
-    color: #ffffff;
+.select-date .select-button .calend input {
+    background: transparent;
 }
+
 .select-date .select-button a:focus {
     text-decoration: none;
 }
@@ -8978,32 +8978,36 @@ footer .container .info .social-box .social-item {
 }
 
 .select-date .select-button .calend {
-    background: transparent;
+    background-color: #f1f1f1;
     position: relative;
     margin: 0;
 }
 
-.select-date .select-button input:focus,
-.select-date .select-button input:hover,
+.select-date .select-button .calend:hover input,
 .select-date .select-button a:hover {
     color: #fff;
     background-color: #7d0126;
     text-decoration: none;
     cursor: pointer;
 }
-
-.select-date .select-button .calend i {
-    position: absolute;
-    top: 7px;
-    right: 22px;
-    color: #7d0126;
-    width: 0;
-    height: 0;
-}
-.select-date .select-button .calend:hover input + i
 .select-date .select-button .calend:hover i {
     color: #ffffff;
-    background-color: #7d0126;
+}
+.select-date .select-button .calend i {
+    color: #7d0126;
+    padding: 0;
+}
+.select-date .select-button .calend i:before {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    z-index: 2;
+}
+
+
+.select-date .select-button .calend:hover i {
+    color: #ffffff;
+    cursor: pointer;
 }
 
     /* /new */
